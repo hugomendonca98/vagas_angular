@@ -1,0 +1,36 @@
+<nav aria-label="breadcrumb">
+</nav>
+<div class="container mt-5">
+  <div class="card list-car">
+    <h5 class="card-header">Lista de Vagas</h5>
+    <div class="card-body">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Descrição</th>
+            <th scope="col">Requisitos Obrigatorios</th>
+            <th scope="col">Requisitos Desejaveis</th>
+            <th scope="col">Local de Trabalho</th>
+            <th scope="col">Beneficios</th>
+            <th scope="col">Remuneração</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let vaga of vagas">
+            <td>{{vaga.id}}</td>
+            <td>{{vaga.descricao}}</td>
+            <td>{{vaga.reqObrigatorios}}</td>
+            <td>{{vaga.reqDesejaveis}}</td>
+            <td>{{vaga.localTrabalho}}</td>
+            <td>{{vaga.beneficios}}</td>
+            <td>R{{vaga.remuneracao| currency}}</td>
+            <td>
+              <!--<button type="button" class="btn btn-warning btn-sm" (click)="editCar(car)">Editar</button>-->
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
