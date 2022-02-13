@@ -1,0 +1,39 @@
+nav {
+  padding: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #2d2d2d;
+}
+
+nav > h1 {
+  color: #fff;
+  font-size: 24px;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 13px;
+}
+
+.menu > li {
+  margin-left: 10px;
+  list-style: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.menu > li > a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  background-color: #464646;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.menu > li > a:hover {
+  transition: color 200ms;
+  color: rgb(140, 159, 184);
+}

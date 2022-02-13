@@ -1,36 +1,31 @@
-<nav aria-label="breadcrumb">
-</nav>
-<div class="container mt-5">
-  <div class="card list-car">
-    <h5 class="card-header">Lista de Vagas</h5>
-    <div class="card-body">
-      <table class="table">
-        <thead>
-          <tr>
-            <th scope="col">Id</th>
-            <th scope="col">Descrição</th>
-            <th scope="col">Requisitos Obrigatorios</th>
-            <th scope="col">Requisitos Desejaveis</th>
-            <th scope="col">Local de Trabalho</th>
-            <th scope="col">Beneficios</th>
-            <th scope="col">Remuneração</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr *ngFor="let vaga of vagas">
-            <td>{{vaga.id}}</td>
-            <td>{{vaga.descricao}}</td>
-            <td>{{vaga.reqObrigatorios}}</td>
-            <td>{{vaga.reqDesejaveis}}</td>
-            <td>{{vaga.localTrabalho}}</td>
-            <td>{{vaga.beneficios}}</td>
-            <td>R{{vaga.remuneracao| currency}}</td>
-            <td>
-              <!--<button type="button" class="btn btn-warning btn-sm" (click)="editCar(car)">Editar</button>-->
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
+<h1>Lista de vagas para desenvolvedores</h1>
+<div class="table-content">
+  <table>
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Descrição</th>
+        <th>Requisitos Obrigatorios</th>
+        <th>Requisitos Desejaveis</th>
+        <th>Local de Trabalho</th>
+        <th>Beneficios</th>
+        <th>Remuneração</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let vaga of vagas">
+        <td>{{vaga.id}}</td>
+        <td>{{vaga.descricao}}</td>
+        <td>{{vaga.reqObrigatorios}}</td>
+        <td>{{vaga.reqDesejaveis}}</td>
+        <td>{{vaga.localTrabalho}}</td>
+        <td>{{vaga.beneficios}}</td>
+        <td>R{{vaga.remuneracao| currency}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="btn-vagas">
+  <a routerLink="/" role="button">Voltar para a página principal</a>
 </div>
